@@ -1,5 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
+import styled from 'styled-components'
+import GlobalStyles from './GlobalStyles'
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
@@ -18,6 +20,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
+      <GlobalStyles />
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
