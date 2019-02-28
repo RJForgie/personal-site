@@ -1,8 +1,8 @@
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px 300px;
-    grid-gap: 20px;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 0.33fr 0.33fr 0.33fr;
+    height: 100vh;
 }
 
 .item {
@@ -15,4 +15,14 @@
 
 .nav {
     grid-row: span 3;
+}
+
+.image-wrapper {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.info-wrapper {
+    grid-column-start: 3;
+    grid-row-start: 2;
 }
