@@ -22,7 +22,7 @@ const Layout = ({ children }) => (
       <>
       <GlobalStyles />
       <div className="grid">
-        <div className="item">1</div>
+        <div className="item nav">1</div>
         <div className="item">2</div>
         <div className="item">3</div>
         <div className="item">4</div>
