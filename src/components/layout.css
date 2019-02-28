@@ -1,9 +1,14 @@
 .grid {
     display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
 }
 
 .item {
+    display: grid;
     background-color: #c6d1e2;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
 }
