@@ -8,7 +8,12 @@ import styled from 'styled-components'
 const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100vh;
+  height: 100%;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(autofill)
+  }
 `
 const ItemWrapper = styled.div`
   background-color: red;
@@ -17,11 +22,11 @@ const ItemWrapper = styled.div`
   border: 5px solid black;
 `
 const Photo = styled(ItemWrapper)`
-  grid-column-start: 1;
+  height: 100%;
 `
 
 const Card = styled(ItemWrapper)`
-  grid-column-start: 2;
+  height: 100%;
 `
 
 const IndexPage = () => (

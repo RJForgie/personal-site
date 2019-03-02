@@ -8,8 +8,13 @@ import Header from "./header"
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 0.5fr 1fr;
+  grid-template-columns: repeat(6, minmax(150px, 1fr));
   height: 100vh;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 90% 10%;
+  }
 `
 const ItemWrapper = styled.div`
   background-color: #c6d1e2;
@@ -23,6 +28,11 @@ const Nav = styled(ItemWrapper)`
 
 const Content = styled(ItemWrapper)`
   grid-column-start: 2;
+  grid-column: span 5;
+
+  @media (max-width: 1024px) {
+    grid-row-start: 1;
+  }
 `
 
 const Layout = ({ children }) => (
