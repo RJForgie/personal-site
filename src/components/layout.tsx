@@ -24,7 +24,6 @@ const Layout = ({ children }) => (
       <div className="grid">
         <div className="item nav">1</div>
         <div className="item image-wrapper">2</div>
-        <div className="item info-wrapper">3</div>
       </div>
       </>
     )}

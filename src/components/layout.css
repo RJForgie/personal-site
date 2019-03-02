@@ -1,7 +1,7 @@
 .grid {
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr;
-    grid-template-rows: 0.33fr 0.33fr 0.33fr;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
     height: 100vh;
 }
 
@@ -19,10 +19,5 @@
 
 .image-wrapper {
     grid-column-start: 2;
-    grid-row-start: 2;
-}
-
-.info-wrapper {
-    grid-column-start: 3;
-    grid-row-start: 2;
+    grid-row-start: 1;
 }
