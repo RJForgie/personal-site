@@ -7,6 +7,28 @@ import "./layout.css"
 
 import Header from "./header"
 
+const Container = styled.div`
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 1fr;
+  height: 100vh;
+`
+const ItemWrapper = styled.div`
+  display: grid;
+  background-color: #c6d1e2;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid black;
+`
+const Nav = styled(ItemWrapper)`
+  grid-row: span 3;
+`
+
+const Content = styled(ItemWrapper)`
+  grid-column-start: 2;
+  grid-row-start: 1;
+`
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -21,10 +43,12 @@ const Layout = ({ children }) => (
     render={data => (
       <>
       <GlobalStyles />
-      <div className="grid">
-        <div className="item nav">1</div>
-        <div className="item image-wrapper">2</div>
-      </div>
+      <Container>
+        <Nav>nav</Nav>
+        <Content>
+          {children}
+        </Content>
+      </Container>
       </>
     )}
   />

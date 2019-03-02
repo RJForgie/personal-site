@@ -1,7 +1,6 @@
 .grid {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 100px 100px;
     height: 100vh;
 }
 
@@ -13,11 +12,6 @@
     border: 5px solid black;
 }
 
-.nav {
-    grid-row: span 3;
-}
-
-.image-wrapper {
+.card-wrapper {
     grid-column-start: 2;
-    grid-row-start: 1;
 }
