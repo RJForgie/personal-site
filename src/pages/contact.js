@@ -9,6 +9,7 @@ const Contact = () => (
     <SEO title="Contact" />
     <h1>Contact page</h1>
     <p>Contact goes here</p>
+    <span className="material-icons">menu</span>
   </Layout>
 )
 
