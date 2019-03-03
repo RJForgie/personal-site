@@ -1,8 +1,8 @@
-import React from "react"
+import React from 'react'
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from '../components/layout'
+import Image from '../components/image'
+import SEO from '../components/seo'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -31,7 +31,7 @@ const Card = styled(ItemWrapper)`
 
 const IndexPage = () => (
   <Layout>
-  <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />    
+    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Container className='grid'>
       <Photo>photo</Photo>
       <Card>card</Card>

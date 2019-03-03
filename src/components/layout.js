@@ -1,11 +1,8 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import GlobalStyles from './GlobalStyles'
-import { StaticQuery, graphql } from "gatsby"
-import { Link } from "gatsby"
-
-import Header from "./header"
+import { StaticQuery, graphql, Link } from 'gatsby'
 
 const Container = styled.div`
   display: grid;
