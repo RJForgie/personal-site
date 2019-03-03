@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import styled from 'styled-components'
 import GlobalStyles from './GlobalStyles'
 import { StaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 import Header from "./header"
 
@@ -24,6 +25,13 @@ const ItemWrapper = styled.div`
 `
 const Nav = styled(ItemWrapper)`
   grid-column-start: 1;
+
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 25%);
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr)
+  }
 `
 
 const Content = styled(ItemWrapper)`
@@ -34,6 +42,12 @@ const Content = styled(ItemWrapper)`
     grid-row-start: 1;
   }
 `
+
+const ListLink = props => (
+  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
+    <Link to={props.to}>{props.children}</Link>
+  </li>
+)
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -50,7 +64,12 @@ const Layout = ({ children }) => (
       <>
       <GlobalStyles />
       <Container>
-        <Nav>nav</Nav>
+        <Nav>
+          <ListLink to="/">About</ListLink>
+          <ListLink to="/projects/">Projects</ListLink>
+          <ListLink to="/contact/">Contact</ListLink>
+          <ListLink to="/resume/">CV</ListLink>
+        </Nav>
         <Content>
           {children}
         </Content>
