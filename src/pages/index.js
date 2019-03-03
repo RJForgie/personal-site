@@ -21,11 +21,15 @@ const ItemWrapper = styled.div`
   align-items: center;
   border: 5px solid black;
 `
-const Photo = styled(ItemWrapper)`
+const PhotoWrapper = styled(ItemWrapper)`
   height: 100%;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 60% 20%;
 `
 
-const Card = styled(ItemWrapper)`
+const CardWrapper = styled(ItemWrapper)`
   height: 100%;
 `
 
@@ -33,8 +37,12 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Container className='grid'>
-      <Photo>photo</Photo>
-      <Card>card</Card>
+      <PhotoWrapper>
+        <div style={{ gridRowStart: `2` }}>
+          <Image />
+        </div>
+      </PhotoWrapper>
+      <CardWrapper>card</CardWrapper>
     </Container>
   </Layout>
 )
