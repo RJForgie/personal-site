@@ -4,4 +4,5 @@ Todo:
 * Google Analytics
 * TypeScript
 * Jest Unit Tests
-* Lighthouse test
+* Lighthouse test (hook?)
+* Light / Dark theme switch
