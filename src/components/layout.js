@@ -15,10 +15,9 @@ const Container = styled.div`
   }
 `
 const ItemWrapper = styled.div`
-  background-color: #c6d1e2;
+  background-color: #1b3045;
   justify-content: center;
   align-items: center;
-  border: 5px solid black;
 `
 const Nav = styled(ItemWrapper)`
   grid-column-start: 1;
@@ -27,7 +26,15 @@ const Nav = styled(ItemWrapper)`
   grid-template-rows: repeat(auto-fit, 25%);
 
   @media (max-width: 1024px) {
-    grid-template-columns: repeat(4, 1fr)
+    grid-template-columns: repeat(4, 1fr);
+    position: fixed;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 10%;
+
+    z-index: 1;
   }
 `
 

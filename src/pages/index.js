@@ -16,10 +16,9 @@ const Container = styled.div`
   }
 `
 const ItemWrapper = styled.div`
-  background-color: red;
+  background-color: #2e5073;
   justify-content: center;
   align-items: center;
-  border: 5px solid black;
 `
 const PhotoWrapper = styled(ItemWrapper)`
   height: 100%;
@@ -31,6 +30,11 @@ const PhotoWrapper = styled(ItemWrapper)`
 
 const CardWrapper = styled(ItemWrapper)`
   height: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 60% 20%;
+  overflow: hidden;
 `
 
 const IndexPage = () => (
@@ -38,11 +42,15 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Container className='grid'>
       <PhotoWrapper>
-        <div style={{ gridRowStart: `2` }}>
+        <div style={{ gridRowStart: `2`, margin: '50px', maxHeight: '100%' }}>
           <Image />
         </div>
       </PhotoWrapper>
-      <CardWrapper>card</CardWrapper>
+      <CardWrapper>
+        <div style={{ gridRowStart: `2`, margin: '50px', maxHeight: '100%' }}>
+          <Image />
+        </div>
+      </CardWrapper>
     </Container>
   </Layout>
 )
