@@ -42,13 +42,21 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Container className='grid'>
       <PhotoWrapper>
-        <div style={{ gridRowStart: `2`, margin: '50px', maxHeight: '100%' }}>
+        <div style={{
+          gridRowStart: `2`,
+        }}>
           <Image />
         </div>
       </PhotoWrapper>
       <CardWrapper>
-        <div style={{ gridRowStart: `2`, margin: '50px', maxHeight: '100%' }}>
-          <Image />
+        <div style={{
+          backgroundColor: `#8196ab`,
+          width: `100%`,
+          height: `500px`,
+          gridRowStart: `2`,
+          maxHeight: '100%',
+        }}>
+          test
         </div>
       </CardWrapper>
     </Container>
