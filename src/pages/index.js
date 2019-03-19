@@ -8,7 +8,7 @@ import styled from 'styled-components'
 const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 33% 33% 33%;
+  grid-template-rows: 20% 60% 20%;
   height: 100%;
 
   @media (max-width: 1024px) {
