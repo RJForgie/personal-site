@@ -8,11 +8,15 @@ const StyledCard = styled.div`
     color:#8196ab;
     border-radius: 15px;
 
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
 `
 
 const Card = () => (
   <StyledCard>
-    hello
+    <div>Ryan Forgie</div>
+    <div>One sentence</div>
+    <div>Social Icons</div>
   </StyledCard>
 )
 
