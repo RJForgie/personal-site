@@ -7,12 +7,13 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 33% 33% 33%;
   height: 100%;
 
   @media (max-width: 1024px) {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(autofill)
+    grid-template-rows: 50% 50%;
   }
 `
 const ItemWrapper = styled.div`
@@ -22,19 +23,28 @@ const ItemWrapper = styled.div`
 `
 const PhotoWrapper = styled(ItemWrapper)`
   height: 100%;
-  
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 20% 60% 20%;
+  padding: 5px;
+
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+
+  @media (max-width: 1024px) {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
 `
 
 const CardWrapper = styled(ItemWrapper)`
   height: 100%;
 
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 20% 60% 20%;
-  overflow: hidden;
+  grid-column-start: 3;
+  grid-row-start: 2;
+
+  @media (max-width: 1024px) {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
 `
 
 const IndexPage = () => (
@@ -42,19 +52,13 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Container className='grid'>
       <PhotoWrapper>
-        <div style={{
-          gridRowStart: `2`,
-        }}>
-          <Image />
-        </div>
+        <Image />
       </PhotoWrapper>
       <CardWrapper>
         <div style={{
           backgroundColor: `#8196ab`,
           width: `100%`,
-          height: `500px`,
-          gridRowStart: `2`,
-          maxHeight: '100%',
+          height: `100%`,
         }}>
           test
         </div>
