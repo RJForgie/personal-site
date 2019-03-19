@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
 import SEO from '../components/seo'
 import Card from '../components/card'
 import styled from 'styled-components'
@@ -14,19 +13,19 @@ const Container = styled.div`
 
   @media (max-width: 1024px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 100%;
   }
 `
 const ItemWrapper = styled.div`
   justify-content: center;
   align-items: center;
 `
-const PhotoWrapper = styled(ItemWrapper)`
-  height: 100%;
-  padding: 5px;
 
-  grid-column-start: 2;
+const CardWrapper = styled(ItemWrapper)`
+  height: 100%;
+
   grid-row-start: 2;
+  grid-column: span 3;
 
   @media (max-width: 1024px) {
     grid-column-start: 1;
@@ -34,25 +33,10 @@ const PhotoWrapper = styled(ItemWrapper)`
   }
 `
 
-const CardWrapper = styled(ItemWrapper)`
-  height: 100%;
-
-  grid-column-start: 3;
-  grid-row-start: 2;
-
-  @media (max-width: 1024px) {
-    grid-column-start: 1;
-    grid-row-start: 2;
-  }
-`
-
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Container className='grid'>
-      <PhotoWrapper>
-        <Image />
-      </PhotoWrapper>
       <CardWrapper>
         <Card />
       </CardWrapper>
