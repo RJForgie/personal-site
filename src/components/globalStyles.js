@@ -19,6 +19,10 @@ body {
     margin: 0px;
 }
 
+a {
+    color: #8196ab;
+}
+
 .material-icons {
     font-family: 'material icons';
     font-size: 40px;

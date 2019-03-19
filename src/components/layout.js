@@ -20,13 +20,16 @@ const ItemWrapper = styled.div`
   align-items: center;
 `
 const Nav = styled(ItemWrapper)`
-  grid-column-start: 1;
-
+  height: 100%;
   display: grid;
+  grid-column-start: 1;  
   grid-template-rows: repeat(auto-fit, 25%);
+
+  
 
   @media (max-width: 1024px) {
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100%;
     position: fixed;
     top: auto;
     left: 0;
@@ -48,7 +51,7 @@ const Content = styled(ItemWrapper)`
 `
 
 const ListLink = props => (
-  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
+  <li style={{ display: `inline-block`, marginRight: `1rem`, textAlign: `center` }}>
     <Link to={props.to}>{props.children}</Link>
   </li>
 )
