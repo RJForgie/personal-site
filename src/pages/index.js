@@ -3,6 +3,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import Image from '../components/image'
 import SEO from '../components/seo'
+import Card from '../components/card'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -17,7 +18,6 @@ const Container = styled.div`
   }
 `
 const ItemWrapper = styled.div`
-  background-color: #2e5073;
   justify-content: center;
   align-items: center;
 `
@@ -54,13 +54,7 @@ const IndexPage = () => (
         <Image />
       </PhotoWrapper>
       <CardWrapper>
-        <div style={{
-          backgroundColor: `#8196ab`,
-          width: `100%`,
-          height: `100%`,
-        }}>
-          test
-        </div>
+        <Card />
       </CardWrapper>
     </Container>
   </Layout>

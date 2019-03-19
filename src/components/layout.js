@@ -51,7 +51,11 @@ const Content = styled(ItemWrapper)`
 `
 
 const ListLink = props => (
-  <li style={{ display: `inline-block`, marginRight: `1rem`, textAlign: `center` }}>
+  <li style={{
+    display: `inline-block`,
+    marginRight: `1rem`,
+    textAlign: `center`,
+  }}>
     <Link to={props.to}>{props.children}</Link>
   </li>
 )
