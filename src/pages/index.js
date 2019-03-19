@@ -27,7 +27,6 @@ const PhotoWrapper = styled(ItemWrapper)`
 
   grid-column-start: 2;
   grid-row-start: 2;
-  grid-row-end: 2;
 
   @media (max-width: 1024px) {
     grid-column-start: 1;
