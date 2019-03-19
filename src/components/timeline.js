@@ -7,11 +7,11 @@ const StyledTimeline = styled.div`
     background-color: inherit;
     width: 50%;
 `
-const TimeLine = data => (
+const Timeline = data => (
   <StyledTimelineItem>
     <h2>{data.year}</h2>
     <p>{data.text}</p>
   </StyledTimelineItem>
 )
 
-export default TimeLine
+export default Timeline
