@@ -1,14 +1,25 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Card from '../components/card'
+
+const StyledCardGrid = styled.div`
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: 50% 50%;
+`
 
 const Projects = () => (
   <Layout>
     <SEO title="Projects" />
-    <h1>Project page</h1>
-    <p>Projects go here</p>
+    <StyledCardGrid>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+    </ StyledCardGrid>
   </Layout>
 )
 

@@ -11,7 +11,7 @@ const StyledCard = styled.div`
     overflow: hidden;
 
     display: grid;
-    grid-template-columns: 0.30fr 0.70fr;
+    grid-template-columns: 0.40fr 0.60fr;
     grid-template-rows: 33% 33% 33%;
 
     @media (max-width: 1024px) {
