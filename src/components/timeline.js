@@ -18,31 +18,10 @@ const StyledTimeline = styled.div`
     margin-left: -3px;
     }
 
-    
-
-    
-
     @media screen and (max-width: 600px) {
         /* Place the timelime to the left */
         ::after {
         left: 31px;
-        }
-
-        ::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-        }
-
-        /* Make sure all circles are at the same spot */
-        .left::after, .right::after {
-        left: 15px;
-        }
-        
-        /* Make all right containers behave like the left ones */
-        .right {
-        left: 0%;
         }
     }
 }

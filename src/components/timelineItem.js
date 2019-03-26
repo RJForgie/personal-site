@@ -12,7 +12,7 @@ const StyledTimelineItem = styled.div`
     position: absolute;
     width: 25px;
     height: 25px;
-    right: -17px;
+    right: -13px;
     background-color: #57728f;
     border: 4px solid #FF9F55;
     top: 15px;
@@ -54,7 +54,7 @@ const StyledTimelineItem = styled.div`
         }
 
         ::after {
-        left: -16px;
+        left: -13px;
         }
     }
 
@@ -71,12 +71,12 @@ const StyledTimelineItem = styled.div`
         }
 
         /* Make sure all circles are at the same spot */
-        .left::after, .right::after {
-        left: 15px;
+        &.left::after, &.right::after {
+        left: 18px;
         }
         
         /* Make all right containers behave like the left ones */
-        .right {
+        &.right {
         left: 0%;
         }
     }
