@@ -16,7 +16,7 @@ const StyledCard = styled.div`
 
     @media (max-width: 1024px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 55% 15% 15% 15%;
+    grid-template-rows: 50% 25% 25%;
   }
 `
 
@@ -24,7 +24,6 @@ const Card = () => (
   <StyledCard>
     <Image />
     <div>Ryan Forgie</div>
-    <div>One sentence</div>
     <div>Social Icons</div>
   </StyledCard>
 )

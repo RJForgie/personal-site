@@ -44,6 +44,10 @@ const timeLineData = [
     year: `2016`,
     text: `2016 timeline text`
   },
+  {
+    year: `2015`,
+    text: `2015 timeline text`
+  },
 ]
 const Timeline = () => (
   <StyledTimeline>

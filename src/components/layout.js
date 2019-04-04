@@ -24,7 +24,7 @@ const Nav = styled(ItemWrapper)`
   display: grid;
   grid-column-start: 1;  
   grid-template-rows: repeat(auto-fit, 25%);
-
+  z-index: 2;
   
 
   @media (max-width: 1024px) {
@@ -36,8 +36,6 @@ const Nav = styled(ItemWrapper)`
     right: 0;
     bottom: 0;
     height: 10%;
-
-    z-index: 1;
   }
 `
 
