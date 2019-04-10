@@ -6,7 +6,7 @@ import Card from '../components/card'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 20% 60% 20%;
   height: 100%;
@@ -14,7 +14,7 @@ const Container = styled.div`
   @media (max-width: 1024px) {
     grid-template-columns: 1fr;
     grid-template-rows: 100%;
-  }
+  } */
 `
 const ItemWrapper = styled.div`
   justify-content: center;
@@ -22,21 +22,23 @@ const ItemWrapper = styled.div`
 `
 
 const CardWrapper = styled(ItemWrapper)`
-  height: 100%;
+  max-width: 50%;
+  /* height: 100%;
 
   grid-row-start: 2;
-  grid-column: span 3;
+  grid-column: span 3; */
 
   @media (max-width: 1024px) {
-    grid-column-start: 1;
-    grid-row-start: 1;
+    /* grid-column-start: 1;
+    grid-row-start: 1; */
+    max-width: 100%;
   }
 `
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Container className='grid'>
+    <Container>
       <CardWrapper>
         <Card />
       </CardWrapper>

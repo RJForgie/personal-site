@@ -8,8 +8,14 @@ const GlobalStyles = createGlobalStyle`
 
 html {
     box-sizing: border-box;
+    line-height: 1.6;
+
+    /* make fonts more smooth in all browsers */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-  *, *:before, *:after {
+
+*, *:before, *:after {
     box-sizing: inherit;
     overflow-y: scroll;
   }
@@ -21,7 +27,15 @@ body {
 }
 
 a {
-    color: #8196ab;
+    color: #E76C67
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
 }
 
 .material-icons {
