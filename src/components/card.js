@@ -62,18 +62,18 @@ const Card = () => (
   <StyledCard>
     <Image />
     <div class='card-content'>
-      <h1>The Second City</h1>
-      <div class="subtitle">City of Big Shoulders</div>
+      <h1>Title</h1>
+      <div class="subtitle">Subtitle goes here</div>
       <p>
-      Chicago is the home of the blues and the truth of jazz, the heart of comedy and the idea of
-      the skyscraper. It's a city with a swagger, but without the surliness or even the fake smiles
-      found in other cities of its size.
+      test testtesttesttesttesttesttesttesttesttesttest
+      testtesttesttesttesttesttest testtesttesttesttesttest
+      test testtesttesttesttesttest
       </p>
 
       <div class="card-details">
         <div class="card-details-inner">
           <div class="read-more">
-            <Button class="button" href="https://en.wikivoyage.org/wiki/Chicago">Read Article</Button>
+            <Button class="button" href="https://en.wikivoyage.org/wiki/Chicago">Button text</Button>
           </div>
           <div class="options">
             <div class="comments">
