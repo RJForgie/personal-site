@@ -76,8 +76,8 @@ const Layout = ({ children }) => (
         <Nav>
           <ListLink to="/">About</ListLink>
           <ListLink to="/projects/">Projects</ListLink>
-          <ListLink to="/contact/">Contact</ListLink>
           <ListLink to="/resume/">CV</ListLink>
+          <ListLink to="/contact/">Contact</ListLink>
         </Nav>
         <Content>
           {children}

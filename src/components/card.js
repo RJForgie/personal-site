@@ -9,9 +9,7 @@ const StyledCard = styled.div`
   border: 1px solid #efefef;
   color: #444444;
   background-color: white;
-  /* max-width: 50%; */
   overflow-y: initial;
-  margin: 20px;
 
 
   .card-content {
@@ -55,23 +53,9 @@ const StyledCard = styled.div`
   background-repeat: no-repeat;
 }
 
-    /* height: 100%;
+  @media (max-width: 1024px) {
     width: 100%;
-    background-color: #24405c;
-    color:#8196ab;
-    border-radius: 15px;
-    overflow: hidden;
-
-    display: grid;
-    grid-template-columns: 0.40fr 0.60fr;
-    grid-template-rows: 33% 33% 33%; */
-
-    @media (max-width: 1024px) {
-    /* max-height: 100%;
-    max-width: 100%;
-    flex: 1 1 50%; */
-    margin: 0;
-    }
+  }
 `
 
 const Card = () => (
