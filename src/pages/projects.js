@@ -6,7 +6,11 @@ import SEO from '../components/seo'
 import Card from '../components/card'
 
 const StyledCardGrid = styled.div`
-  display: block;
+  display: flex;
+
+  @media (max-width: 800px) {
+    display: block;
+  }
 `
 
 const Projects = () => (

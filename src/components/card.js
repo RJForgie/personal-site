@@ -10,6 +10,8 @@ const StyledCard = styled.div`
   color: #444444;
   background-color: white;
   overflow-y: initial;
+  max-width: 50%;
+  margin: 8px;
 
 
   .card-content {
@@ -53,8 +55,8 @@ const StyledCard = styled.div`
   background-repeat: no-repeat;
 }
 
-  @media (max-width: 1024px) {
-    width: 100%;
+  @media (max-width: 800px) {
+    max-width: 100%;
   }
 `
 
